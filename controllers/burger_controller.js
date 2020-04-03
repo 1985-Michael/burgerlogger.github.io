@@ -4,7 +4,7 @@ const burger = require("../models/burger.js");
 
 
 router.get("/", function(req, res) {
-    cat.all(function(data) {
+    burger.all(function(data) {
         const hbsObject = {
             burger: data
         };
@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res) {
-    cat.create([
+    burger.create([
             "burger", "hungry"
         ],
 

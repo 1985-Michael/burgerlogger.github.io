@@ -10,7 +10,7 @@ $(function() {
 
         };
 
-        $.ajax("/api/burgers", {
+        $.ajax("/api/burgers/", {
             type: "POST",
             data: newBurger
         }).then(
